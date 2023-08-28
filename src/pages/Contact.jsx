@@ -1,8 +1,24 @@
+import { useRef} from 'react';
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion'
 import styles from '../styles/contact.module.css'
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    form.current.reset();
+
+    emailjs.sendForm('service_qb9kb0e', 'template_gf7b3r9', form.current, 'XHv2Rsj86bwRrO9-k')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+  };
   return (
     <>
       <motion.div
@@ -26,28 +42,28 @@ function Contact() {
           className={styles.lineGradient}
         ></motion.div>
         
-          <form className={styles.divForm}>
+          <form className={styles.divForm} ref={form} >
           <motion.input 
            initial={{ y: 10, opacity: 0 }}
            animate={{ y: 0, opacity: 1 }}
            transition={{ delay: 0.5 }}
-          type='text' placeholder='Full name'/>
+          type='text' placeholder='Full name' name='user_name' />
           <motion.input 
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6 }}
-          type='email' placeholder='Email address'/>
+          type='email' placeholder='Email address' name='user_email'/>
           <motion.textarea 
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7 }}
-          rows={15} cols={17} placeholder='Type your message here...'/>
+          rows={15} cols={17} placeholder='Type your message here...' name='message'/>
           </form>
           <motion.button 
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.8 }}
-          type='submit'>Send message</motion.button>
+          type='submit' onClick={sendEmail}>Send message</motion.button>
           <motion.div
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

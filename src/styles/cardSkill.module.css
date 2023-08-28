@@ -6,9 +6,11 @@
     overflow: hidden;
     border-radius: 3px;
 }
+
 .containCard:hover{
     border-color: #FF766C;
 }
+
     
 .containCard:hover .iconcard {
         transform: scale(1.1);
