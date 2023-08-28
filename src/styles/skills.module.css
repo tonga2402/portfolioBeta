@@ -71,10 +71,7 @@
 }
 
 @media (min-width:1080px){
-    .containSkills{
-        max-width: 1280px;
-        margin: 1px auto;
-    }
+ 
     .backgroundGrey{
         right: 740px; 
     }
