@@ -1,0 +1,106 @@
+.backgroundGrey{
+    position: absolute;
+    right: 150px;
+    width: 300px;
+    height: 100vh;
+    background: linear-gradient(135deg, #292929 0.50%, rgba(0, 0, 0, 0.24) 72.35%);
+}
+
+.containText{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    top:5%;
+    right: 9%;
+    gap: 25px;
+    opacity: 1;  
+}
+
+.aboutMe{
+    text-align: end;
+    padding-right: 140px;
+}
+
+.lineGradient{
+    width: 263px;
+    height: 3px;
+    background-color: antiquewhite;
+    border-radius: 4px;
+    background: var(--color-linear, linear-gradient(123deg, #1ADBBB 0%, #14A5ED 21.88%, #7F64FB 41.67%, #F33265 61.98%, #FFAF84 81.25%, #FF766C 100%));
+}
+
+.wh3{
+    font-size: 60px;
+    font-weight: 350;
+    line-height: 87.523%; /* 70.018px */
+    letter-spacing: -2.223px;
+}
+
+@media (min-width:744px){
+    .backgroundGrey{
+        right: 420px; 
+    }
+    .wh3{
+        font-size: 80px; 
+        margin-right: 230px;
+    }
+    .lineGradient{
+        width: 533px;
+    }
+   
+}
+
+@media (min-width:1080px){
+    .backgroundGrey{
+        right: 740px; 
+    }
+    .wh3{
+        margin-right: 520px;
+    }
+    .lineGradient{
+        width: 825px;
+        height: 4px;
+    }
+    
+}
+
+@media (min-width:1200px){
+    .backgroundGrey{
+        right: 750px; 
+    }
+}
+
+@media (min-width:1400px){
+    .backgroundGrey{
+        right: 770px; 
+    }
+}
+@media (min-width:1500px){
+    .wh3{
+       margin-right: 750px;
+    }
+
+    .backgroundGrey{
+        right: 1000px; 
+    }
+    .lineGradient{
+        width: 1055px;
+    }
+
+
+}
+
+@media (min-width:1728px){
+    .backgroundGrey{
+        right: 1020px; 
+    }
+}
+
+@media (min-width:2080px){
+    .backgroundGrey{
+        right: 1040px; 
+    }
+}
+
+

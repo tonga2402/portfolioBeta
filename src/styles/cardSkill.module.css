@@ -1,0 +1,106 @@
+.containCard{
+    position: relative;
+    border: solid 1px white;
+    width: 110px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.containCard:hover{
+    border-color: #FF766C;
+}
+    
+.containCard:hover .iconcard {
+        transform: scale(1.1);
+    }
+
+
+.iconcard{
+    position: absolute;
+    font-size: 75px;
+    left: -26px;
+    top: -10px;
+    transition: ease 0.2s;
+}
+
+h5{
+    position: absolute;
+    color:rgb(182, 182, 182);
+    font-size: 14px;
+    text-align: end;
+    font-weight: 350;
+    line-height: 87.523%; /* 70.018px */
+    letter-spacing: -1.223px;
+    right: 8px;
+    top: 28px;
+}
+.contenedor{
+    position: relative;
+    margin-top: 33px;
+    margin-left: 49px;
+    width: 50px;
+    height: 20px;
+}
+.lineGradient{
+    position: absolute;
+    height: 2px;
+    background-color: #FF766C;
+    bottom: 7px;
+    right: 0px;
+    border-radius: 3px;
+}
+.lineGradient2{
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    bottom: 7px;
+    right: 0px;
+    border-radius: 3px;
+}
+
+
+.lineGradient::after{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    transition: all 300ms;
+}
+.containCard:hover .lineGradient::after{
+    width: 0%;
+}
+
+@media (min-width:744px){
+
+    .containCard{ 
+        width: 180px;
+        height: 100px;
+    }
+    .iconcard{
+        font-size: 125px;
+        left: -45px;
+        top: -15px;
+    }
+
+    h5{
+        font-size: 20px; 
+        right: 15px;
+        top: 52px;
+    }   
+    .contenedor{
+        width: 80px;
+    }
+    .lineGradient{
+        bottom: -29px;
+        right: -35px;
+    }
+    .lineGradient2{
+        width: 80px;
+        bottom: -29px;
+        right: -35px;
+    }
+
+}

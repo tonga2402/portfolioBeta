@@ -1,0 +1,81 @@
+.containDiv{
+     margin-right: 5%;
+     margin-top: 40px;
+
+ }
+ .containText{
+     display: flex;
+     flex-direction: column;
+     align-items:flex-end
+ }
+ 
+ 
+ .homeH4{
+     font-size: 30px;
+     font-weight: 300;
+     line-height: 87.523%; /* 70.018px */
+     letter-spacing: -2.223px;
+ }
+ 
+ h2{
+     background: var(--8, linear-gradient(123deg, #1ADBBB 0%, #14A5ED 21.88%, #7F64FB 41.67%, #F33265 61.98%, #FFAF84 81.25%, #FF766C 100%));
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 55px;
+     font-weight: 300;
+     line-height: 87.523%;
+     letter-spacing: -5px; 
+ }
+ 
+ h1{
+     background: var(--8, linear-gradient(123deg, #1ADBBB 0%, #14A5ED 21.88%, #7F64FB 41.67%, #F33265 61.98%, #FFAF84 81.25%, #FF766C 100%));
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 65px;
+     font-weight: 300;
+     line-height: 87.523%;
+     letter-spacing: -6px;
+ }
+
+ .introH6{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-style: italic;
+ }
+
+
+ @media (min-width:744px) {
+    h1{
+        font-size: 90px;
+    }
+    h2{
+        font-size: 75px;
+    }
+    .homeH4{
+        font-size: 40px;
+    }
+    .introH6{
+        font-size: 18px;
+    }
+ } 
+
+ @media (min-width:1080px){
+
+    h1{
+        font-size: 98px;
+    }
+    h2{
+        font-size: 83px;
+    }
+    .homeH4{
+        font-size: 45px;
+    }
+    .introH6{
+        font-size: 20px;
+    }
+ }

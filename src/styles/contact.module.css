@@ -1,0 +1,196 @@
+.backgroundGrey{
+    position: absolute;
+    right: 150px;
+    width: 300px;
+    height: 100vh;
+    background: linear-gradient(135deg, #292929 0.50%, rgba(0, 0, 0, 0.24) 72.35%);
+}
+
+.containText{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    top:5%;
+    right: 9%;
+    gap: 25px;
+    opacity: 1;  
+}
+
+.aboutMe{
+    text-align: end;
+    padding-right: 140px;
+}
+
+.lineGradient{
+    width: 263px;
+    height: 3px;
+    background-color: antiquewhite;
+    border-radius: 4px;
+    background: var(--color-linear, linear-gradient(123deg, #1ADBBB 0%, #14A5ED 21.88%, #7F64FB 41.67%, #F33265 61.98%, #FFAF84 81.25%, #FF766C 100%));
+}
+
+.h3{
+    font-size: 60px;
+    font-weight: 350;
+    line-height: 87.523%; /* 70.018px */
+    letter-spacing: -2.223px;
+    margin-right: -75px;
+}
+.divProgress{
+    width: 200px;
+}
+
+.iconProgress{
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    gap: 8px; 
+    margin-top: 10px;
+}
+
+.divForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    width: 200px;
+}
+
+input{
+    background-color: black;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: rgb(144, 144, 144);
+    padding: 8px;
+    font-size: 10px; 
+}
+
+input:focus{
+    border-color:#FF766C;
+    outline: none;
+}
+
+textarea{
+    background-color: black;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: rgb(144, 144, 144);
+    padding: 5px;
+    font-size: 10px; 
+}
+
+textarea:focus{
+    border-color:#FF766C;
+    outline: none;
+}
+
+button{
+    width: 122px;
+    height: 33px;
+    font-size: 14px;
+    border: solid 1px #FF766C;
+    border-radius: 5px;
+    background-color: #FF766C;
+    cursor: pointer;
+}
+ button:hover{
+    background-color: black;
+    color: white;
+ }
+
+ .iconSocial{
+    font-size: 25px;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: ease 0.5s;
+ }
+
+ .iconSocial:hover{
+    color: #FF766C;
+ }
+
+ @media (min-width:744px){
+    .backgroundGrey{
+        right: 420px; 
+    }
+    .h3{
+        font-size: 80px; 
+        margin-right: 145px;
+    }
+    .lineGradient{
+        width: 555px;
+    }
+    .divForm{
+    gap: 20px;
+    width: 400px;
+    }
+    input{
+    padding: 13px;
+    font-size: 13px; 
+    }
+    textarea{
+    padding: 12px;
+    font-size: 13px; 
+    }
+    button{
+    width: 140px;
+    height: 38px;
+    font-size: 16px; 
+    }
+     .iconSocial{
+    font-size: 30px;
+    margin-left: 10px;   
+    }
+}
+
+@media (min-width:1080px){
+    .backgroundGrey{
+        right: 740px; 
+    }
+    .h3{
+        margin-right: 515px;
+    }
+    .lineGradient{
+        width: 928px;
+        height: 4px;
+    }
+    .divForm{
+        width: 500px;
+        
+        }
+    }
+
+    @media (min-width:1200px){
+        .backgroundGrey{
+            right: 830px; 
+        }
+    }
+
+    @media (min-width:1500px){
+        .h3{
+           margin-right: 740px;
+        }
+    
+        .backgroundGrey{
+            right: 1100px; 
+        }
+        .lineGradient{
+            width: 1150px;
+        }
+    
+    
+    }
+
+    @media (min-width:1728px){
+        .backgroundGrey{
+            right: 1100px; 
+        }
+    }
+    
+    @media (min-width:1800px){
+        .backgroundGrey{
+            right: 1150px; 
+        }
+    }

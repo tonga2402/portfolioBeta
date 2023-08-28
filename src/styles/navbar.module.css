@@ -1,0 +1,47 @@
+.divNavbar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 1%;
+    bottom: 5%;
+    z-index: 10;
+}
+.navIcon:hover{
+    border-color: black ;
+    background-color: #1ADBBB;
+    transition: 1s ease;
+}
+
+.open{
+    display: inline;
+}
+
+.close{
+    display: none;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.icon:hover{
+    color: black;
+}
+
+.navIcon{
+    width: 55px;
+    height: 55px;
+    border: 2px solid #1ADBBB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;   
+}
+
+
+

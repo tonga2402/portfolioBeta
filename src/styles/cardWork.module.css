@@ -1,0 +1,121 @@
+.containCard{
+    position: relative;
+    border: solid 1px white;
+    width: 120px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-top: 7px;
+}
+.containCard:hover{
+    border-color: #FF766C;
+}
+    
+.containCard:hover .imgWork {
+        transform: scale(1.1);
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+
+.imgWork{
+    position: absolute;
+    left: -28px;
+    top: -9px;
+    transition: ease 0.2s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+img{
+    width: 150px;
+}
+.a{
+    position: absolute;
+    border: none;
+    padding-top: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 6px;
+    width: 35px;
+    height: 15px;
+    bottom: 10px;
+    right: 24px;
+    background-color: #1ADBBB;
+    color: black;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.containCard:hover .a{
+    transform: scale(1.1);
+    background-color: #FF766C;
+    border: solid 1px white;
+    
+}
+
+.contenedor{
+    position: absolute;
+    background-color: black;
+    width: 42px;
+    height: 75px;
+    right: 0px;
+}
+.lineGradient{
+    position: absolute;
+    width: 3px;
+    height: 75px;
+    background-color: #FF766C;
+    right: 40px;
+}
+
+.lineGradient::after{
+    content: " ";
+    display: block;
+    background-color: white;
+    width: 3px;
+    height: 100%;
+    transition: all 100ms;
+}
+.containCard:hover .lineGradient::after{
+    height: 0%;;
+}
+
+@media (min-width:744px){
+    .containCard{
+        width: 200px;
+        height: 120px;
+        margin-top: 7px;
+    }
+    img{
+        width: 195px;
+    }
+    .lineGradient{
+        width: 3px;
+        height: 120px;
+        right: 54px;
+    }
+
+    .contenedor{
+        width: 55px;
+        height: 120px;
+    }
+    .a{
+        font-size: 10px;
+        width: 55px;
+        height: 20px;
+        right: 28px;
+      }
+}
+@media (min-width:1080px){
+
+    .containDivCard{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: end;
+        gap: 10px; 
+        width: 800px;
+    }
+
+}
