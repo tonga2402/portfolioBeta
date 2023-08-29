@@ -67,7 +67,7 @@ function Contact() {
           <motion.div
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.9 }}
+          transition={{ delay: 0.8 }}
           >
             <a className={styles.iconSocial} href=""><IoLogoGithub/></a>
             <a className={styles.iconSocial} href=""><IoLogoLinkedin/></a>
