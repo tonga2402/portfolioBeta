@@ -1,5 +1,6 @@
 import styles from '../styles/about.module.css'
 import { motion } from 'framer-motion'
+import PDF from '../download/CVGastonBalmaceda.pdf'
 
 
 function About() {
@@ -46,7 +47,7 @@ function About() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay:0.8}}
           className={styles.button}
-          href="#"
+          href={PDF} download={PDF}
         >
           download CV
         </motion.a>
