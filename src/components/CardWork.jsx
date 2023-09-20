@@ -4,6 +4,8 @@ import img2 from '../img/trabajo2.png'
 import img3 from '../img/trabajo3.png'
 import img4 from '../img/trabajo4.png'
 import img5 from '../img/trabajo5.png'
+import img6 from '../img/apiMarvel.png'
+import img7 from '../img/finalFront.png'
 import { motion } from 'framer-motion'
 function CardWork() {
   
@@ -32,6 +34,16 @@ const carData = [
       img:img2,
       href:'https://melodious-dragon-ac2edf.netlify.app/',
       delay:0.9
+  },
+  {
+      img:img6,
+      href:'https://tonga2402.github.io/marvel_api/',
+      delay:1
+  },
+  {
+      img:img7,
+      href:'https://github.com/tonga2402/Front-GastonBalmaceda',
+      delay:1.1
   },
 
 ]

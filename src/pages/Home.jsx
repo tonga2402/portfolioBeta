@@ -6,13 +6,10 @@ import { useEffect , useState } from 'react';
 
 function Home() {
 
-
-
   const [intro , setIntro] = useState("welcome to my portfolio")
 
   useEffect(()=>{ 
     setTimeout (() =>{
-      console.log("welcome to my portfolio")
       setIntro(
         ""
       )

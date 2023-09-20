@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import styles from '../styles/navbar.module.css'
-import { IoHomeOutline,IoCodeSlash, IoAccessibilityOutline ,IoBuildOutline,IoLibraryOutline,IoNavigateOutline,IoChevronDown} from 'react-icons/io5'
+import { IoHomeOutline,IoCodeSlash, IoAccessibilityOutline ,IoLibraryOutline,IoNavigateOutline,IoChevronDown} from 'react-icons/io5'
 import { useState } from "react"
 import { IoLogoBuffer } from "react-icons/io";
 import { Tooltip} from 'react-tooltip'
@@ -14,8 +14,6 @@ function NavBar() {
        setMenuButon(!menuButon)
     }
 
-
-    
 
   return (
     <motion.div
@@ -90,6 +88,6 @@ function NavBar() {
       />
     </motion.div>
   );
-}
 
+}
 export default NavBar

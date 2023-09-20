@@ -25,11 +25,10 @@ function Work() {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.4 ,type:"spring", stiffness:200}}
+          transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
           className={styles.lineGradient}
         ></motion.div>
-        <div >
-        
+        <div>
           <CardWork />
         </div>
       </div>
